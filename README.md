@@ -10,20 +10,22 @@ This is a web-based tool that was created to automate the necessary database cha
 
 The user must add their own config.php file with their credentials.  Below is an example to use as a template:
 
+```
   <?php
   // staging
   define('STAGING_HOSTNAME', "mariadb.staging.local");
   define('STAGING_USERNAME', "<username>");
   define('STAGING_PASSWORD', "<password>");
+```
 
 ## Running the Migration
 
-To run a migration, use the follwoing url:
+To run a migration, use the following url:
 
-`http://localhost/site-database-migration.php?source=thecolony&target=wm_salida`
+> http://localhost/site-database-migration.php?source=thecolony&target=wm_salida
 
 The URL variables will specify what migration gets processed.  There are two variables:
 
-**source** - This represents the source database to pull the data.  Presently, it is defaulted to thecolony if not specified.
-
-**target** - This represents the target database and will be the newly created multi tenancy site.
+> **source** - This represents the source database to pull the data.  Presently, it is defaulted to thecolony if not specified.
+> 
+> **target** - This represents the target database and will be the newly created multi tenancy site.
