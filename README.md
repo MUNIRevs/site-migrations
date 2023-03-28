@@ -13,9 +13,9 @@ The user must add their own config.php file with their credentials.  Below is an
 ```
   <?php
   // staging
-  define('STAGING_HOSTNAME', "mariadb.staging.local");
-  define('STAGING_USERNAME', "<username>");
-  define('STAGING_PASSWORD', "<password>");
+  define('HOSTNAME', "mariadb.staging.local");
+  define('USERNAME', "<username>");
+  define('PASSWORD', "<password>");
 ```
 
 ## Running the Migration
